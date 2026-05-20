@@ -117,6 +117,18 @@ pre, code {
 div.paper pre {
   font-size: 0.9em;
 }
+.news-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-container::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+.news-container::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
 </style>
 
 <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" /><!--<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>--><!--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>--><!--<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>-->
@@ -197,8 +209,10 @@ Vision and language learning, Large language models, Multimodal learning, Image 
 <div style="clear: both;">
 <div class="section">
   <h2>News</h2>
-  <div class="paper">
-    <ul>
+   <div class="paper news-container">
+    <ul class="news-list">
+  <!-- <div class="paper">
+    <ul> -->
   <li> 2026.05: One paper about referring image segmentation and one co-author paper about semi-supervised image segmentation both early accepted (top 9%) by MICCAI 2026 in Strasbourg, France.</li>
   <li> 2026.01: One paper about audio-visual question answering accepted by ICLR 2026 in Rio de Janeiro, Brazil.</li>
   <li> 2025.09: Begin my new postdoc journey at the University of Liverpool in UK.</li> 
